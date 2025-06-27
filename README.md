@@ -36,7 +36,11 @@ This Streamlit application analyzes comments from a YouTube video to identify ke
 
 ### Installation
 
-1.  **Clone the repository or download the files.**
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/JordanHawthorne/youtube-comment-analyzer.git
+    cd youtube-comment-analyzer
+    ```
 
 2.  **Create a virtual environment (recommended):**
     ```bash
@@ -49,36 +53,12 @@ This Streamlit application analyzes comments from a YouTube video to identify ke
     pip install -r requirements.txt
     ```
 
-4.  **Set up your YouTube API Key:**
-    
-    **Option 1: Using .env file (Recommended for development)**
-    *   Copy the example environment file:
+4.  **Set up your environment variables:**
+    *   Create a `.env` file by copying the example template:
         ```bash
-        cp env.example .env
+        cp .env.example .env
         ```
-    *   Edit `.env` and add your API key:
-        ```
-        YOUTUBE_API_KEY=YOUR_API_KEY_HERE
-        ```
-    
-    **Option 2: Enter directly in the app**
-    *   Run the app and enter your API key in the sidebar
-    *   The key will be stored in session state for the current session
-    
-    **How to get an API key:**
-    *   Go to [Google Cloud Console](https://console.cloud.google.com/)
-    *   Create a new project or select an existing one
-    *   Enable the YouTube Data API v3
-    *   Create credentials (API Key)
-    *   (Optional) Add restrictions to your API key for security
-
-5.  **Create a `.gitignore` file** to ensure your `.env` file (containing your secret API key) is not committed to version control. Add the following lines to your `.gitignore`:
-    ```
-    .env
-    venv/
-    __pycache__/
-    *.db
-    ```
+    *   Open the new `.env` file and replace the placeholder `YOUR_YOUTUBE_API_KEY_HERE` with your actual YouTube Data API v3 key.
 
 ### Running the Application
 
