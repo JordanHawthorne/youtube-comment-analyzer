@@ -1,0 +1,9 @@
+streamlit>=1.33
+google-api-python-client
+sentence-transformers
+hdbscan
+pandas
+matplotlib
+vaderSentiment
+yake
+python-dotenv
